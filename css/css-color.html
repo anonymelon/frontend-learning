@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+  /* 设置重复页面背景图像和默认文字颜色、字体、 字号 */
+  body {
+    background: url(img/bg-pattern.png);
+    /* 由于继承原因,这些文字样式会应用到所 有的文字,除非定义了其他样式覆盖前面 的样式*/
+    color: #ff0; /* 十六进制黄色 */
+    font-family: arial, helvetica,  sans-serif;
+    font-size: 100%;
+  }
+  /* 所有段落都会显示纯色背景,除非指定下列类别 之一。IE9之前的版本不支持透明色,无论如何都 会显示背景色 */
+  p{
+    padding: .5em;
+  }
+  /* 25% 透明度 */
+  .test-1 {
+    background-color: rgba(60,143,0,.75);
+  }
+  /* 60% 透明度 */
+  .test-2 {
+    background-color: rgba(60,143,0,.4);
+  }
+  </style>
+</head>
+<body>
+  <p class="test-1">This background is 25%  transparent.</p>
+  <p class="test-2">This background is 60%  transparent.</p>
+  <p>This has the same background color as the other two, but doesn't have an alpha transparency setting.</p>
+
+</body>
+</html>
